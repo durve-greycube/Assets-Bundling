@@ -1,0 +1,12 @@
+{%- extends "templates/web.html" -%}
+<h1>Hello</h1>
+
+{% block header %}
+<button class="button" onclick="myFunction(this)" id="btn">Submit</button> 
+{% endblock %}
+
+{% block script %}
+{{include_script('first.js')}}
+{{include_script('first.bundle.js')}}
+    
+{% endblock %}
